@@ -8,7 +8,7 @@ function minimumBribes(q) {
 
   for (let index = len; index-- > 0;) {
     if (q[index] - (index + 1) > 2) {
-      final_result = "Too chaotic";
+      final_result = 'Too chaotic';
       break;
     }
     for (let j = Math.max(q[index]) - 2; j < index; j++) {
@@ -16,7 +16,7 @@ function minimumBribes(q) {
         final_result++;
     }
   }
-  console.log(final_result)
+  console.log(final_result);
 }
 
 console.log(minimumBribes(queue2));
