@@ -4,17 +4,12 @@ let n = 1000000000000000;
 function repeatedString(s, n) {
   let c = 0,
       ca = 0,
-      remaining = n % s.length
-      console.log('remaining: ', remaining);
+      remaining = n % s.length;
 
   for (let i = s.length; i-- > 0;) {
     if (s.charAt(i) == 'a') {
-      ++c
-      console.log('c: ', c);
-
-      if (i < remaining)
-        ++ca
-        console.log('ca: ', ca);
+      ++c;
+      if (i < remaining) { ++ca; }
     }
   }
 
