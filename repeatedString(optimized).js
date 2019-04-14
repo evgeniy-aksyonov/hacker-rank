@@ -19,7 +19,7 @@ function repeatedString(s, n) {
 console.log('repeatedString(s, n): ', repeatedString(s, n));
 
 
-// Of course, 
+// Explanation: 
 // 'ca' is the remaining 'a' characters, 
 // 'c' is the total amount of characters in the given string without the remaining. 
 // 'remaining' is the remaining that doesn't fit into the 'n', 
