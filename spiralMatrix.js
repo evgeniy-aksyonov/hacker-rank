@@ -11,11 +11,8 @@ function spiralMatrix(n) {
     }
   
     let counter = 1;
-    let total_elements = Math.pow(n, 2);
-
     let startColumn = 0;
     let endColumn = n - 1;
-
     let startRow = 0;
     let endRow = n - 1;
 
@@ -25,7 +22,6 @@ function spiralMatrix(n) {
         result_array[startRow][i] = counter;
         counter++;
       }
-
       startRow++;
 
       // right column
@@ -33,7 +29,6 @@ function spiralMatrix(n) {
         result_array[i][endColumn] = counter;
         counter++;
       }
-
       endColumn--;
 
       // bottom row
@@ -41,7 +36,6 @@ function spiralMatrix(n) {
         result_array[endRow][i] = counter;
         counter++;
       }
-
       endRow--;
 
       // left column
@@ -49,7 +43,6 @@ function spiralMatrix(n) {
         result_array[i][startColumn] = counter;
         counter++;
       }
-
       startColumn++;
     }
 
