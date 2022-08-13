@@ -17,8 +17,6 @@ const dates = [
 // ];
 
 function sortDates(dates) {
-  // Write your code here
-
   const sorted = dates.sort(function (a, b) {
     return new Date(a).getTime() - new Date(b).getTime();
   });
